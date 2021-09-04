@@ -21,28 +21,28 @@
               <form name="myForm" class="form" onsubmit="validate();">
                 <div class="form-group">
                     <label for="date">Day:</label>
-                    <input type="number" class="form-control" id="date" name="date">
+                    <input type="number" class="form-control" id="date" name="date" number="number" required>
                   </div> <br>
                 <div class="form-group">
                   <label id="month-label" for="month">Month:</label><br>
                   <select class="form-control" name="month">
-                    <option value='january'>January</option>
-                    <option value='february'>February</option>
-                    <option value='march'>March</option>
-                    <option value='april'>April</option>
-                    <option value='may'>May</option>
-                    <option value='june'>June</option>
-                    <option value='july'>July</option>
-                    <option value='august'>August</option>
-                    <option value='september'>September</option>
-                    <option value='october'>October</option>
-                    <option value='november'>November</option>
-                    <option value='december'>December</option>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>september
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    <option value='12'>12</option>
                   </select>
                 </div> <br>
                 <div class="form-group">
                     <label for="number">Year:</label>
-                    <input type="number" class="form-control" id="year" name="year">
+                    <input type="number" class="form-control" id="year" name="year" number="number" required>
                 </div> <br>
                 <div class="form-group">
                 <div>
@@ -56,12 +56,8 @@
               </form>
               <p id="results"> </p>
             </div>
+            <script src="js/script.js"></script>
         </div>
-
-
-
-        
     </div>
-<script src="js/script.js"></script>
 </body>
 </html>
