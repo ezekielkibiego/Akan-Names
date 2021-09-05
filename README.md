@@ -2,7 +2,7 @@
 #### A simple Akan Names Generator Website Application, 5th September 2021
 #### By **Ezekiel Kibiego**
 
-<img src="">
+<img src="images/Screenshot.png">
 
 ## Description
 This is a Web Application that allows the user to know his/her exact day of birth and also assigns an Akan name to him/her on filling on his/her year, month, and date of birth.
