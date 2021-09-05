@@ -2,6 +2,7 @@
 #### A simple Akan Names Generator Website Application, 5th September 2021
 #### By **Ezekiel Kibiego**
 
+## ScreenShot
 <img src="images/Screenshot.png">
 
 ## Description
