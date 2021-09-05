@@ -34,14 +34,20 @@
           <label for="gender"> <p>Select your gender: </p> Male <input id="male-input" type="radio" name="gender" value="male" required> Female <input id="female-input" type="radio" name="gender" value="female" required> </label> 
         </div>
         <div>
-          <input id="get-name" type="submit" name="" value="Generate name"> 
+          <input id="get-name" type="submit" name="" value="Submit"> 
         </div>
-        </form> 
-        <form onsubmit="return clearInput()"> 
-        <input class="clear" type="submit" value="Reset Form"> 
-        </form> 
-        <h3 id = display-name ><strong>Your Akan Name and Day of Birth<span>&#8595;</span></strong></h3> 
+      </form> 
+      <div class="footer">
+        <div>
+          <form onsubmit="return clearInput()"> 
+            <input class="clear" type="submit" value="Reset Form"> 
+          </form> 
+        </div>
+        <div>
+          <h3 id = display-name ><strong>Your Akan Name and Day of Birth<span>&#8595;</span></strong></h3> 
         <p id="result"></p>
+        </div>
+      </div>
     </div>
  <script src="javascript/script.js"></script>
 </body>
