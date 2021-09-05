@@ -22,6 +22,10 @@ h2{
 label{
     color: #005500;
 }
+input{
+    border: none;
+    border-radius: 5px;
+}
 .gender p{
     color: #ff0000e7;
 }
