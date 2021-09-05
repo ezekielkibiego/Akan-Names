@@ -18,6 +18,7 @@ This is a Web Application that allows the user to know his/her exact day of birt
 </ul>
 
 ### Live Link
+
 <a>https://ezekielkibiego.github.io/Akan-Names/</a>
 
 ## Known Bugs
@@ -31,6 +32,18 @@ No known Bugs yet
 <li>HTML</li>
 <li>CSS</li>
 <li>BOOTSTRAP</li>
+</ul>
+
+## BDD
+Enter century of birth example 19 for 1998, Input Example 19 Output example 19
+
+<ul>
+<li>Enter year of Birth example 98 for 1998 Input Example 98 Output Example 98
+</li>
+<li>Enter month of birth example 10 for October Input example 10 Output example 10</li>
+<li>Enter Date of the month you were born in, example 25 input example 25 output example 25</li>
+<li>Select/check gender Input example male output male or female input female</li>
+<li>Click Submit</li>
 </ul>
 
 ## Support and contact details
