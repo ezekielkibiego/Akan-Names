@@ -12,7 +12,7 @@ function getGender () {
         } 
     } 
 } 
-let myGenderValue = getGender(); 
+var myGenderValue = getGender(); 
 console.log(myGenderValue);
 function yearValidator () { 
     if (yearOfBirth < 1900 || yearOfBirth > 2100) { 
@@ -44,10 +44,10 @@ function dayValidator () {
         return false;
         } else { return true; } 
 } 
-let yearValid = yearValidator();
-let monthValid = monthValidator();
-let dayValid = dayValidator(); 
-let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
+var yearValid = yearValidator();
+var monthValid = monthValidator();
+var dayValid = dayValidator(); 
+var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
 if (myGenderValue == "male" && yearValid && monthValid && dayValid){
     switch (dayOfWeekNumber) { 
