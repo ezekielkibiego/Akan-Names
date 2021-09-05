@@ -22,10 +22,6 @@ h2{
 label{
     color: #005500;
 }
-input{
-    border: none;
-    border-radius: 5px;
-}
 .gender p{
     color: #ff0000e7;
 }
@@ -56,4 +52,10 @@ h3{
 }
 ::placeholder{
     color: #ff0000e7;
+}
+input {
+    border: none;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
 }
