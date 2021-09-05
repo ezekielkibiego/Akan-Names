@@ -14,13 +14,10 @@ body{
     text-decoration-line: underline;
 }
 .header h2{
-    color: #ff0000e7;
     text-align: center;
 }
 h3{
-    color: #005500;
 }
 #result{
-    color: #005500;
     font-size: 30px;
 }
