@@ -15,51 +15,35 @@
             <h1>Ghana's Akan Names</h1>
             <h2>Know your Akan name and the day of the week that your born by just inputting your date of birth details</h2>
         </div>
-        <div class="overlay">
-            <div class="container">
-              <h2>Enter Your details</h2>
-              <form name="myForm" class="form" onsubmit="validate();">
-                <div class="form-group">
-                    <label for="date">Day:</label>
-                    <input type="number" class="form-control" id="date" name="date" number="number" required>
-                  </div> <br>
-                <div class="form-group">
-                  <label id="month-label" for="month">Month:</label><br>
-                  <select class="form-control" name="month">
-                    <option value='1'>1</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option>september
-                    <option value='4'>4</option>
-                    <option value='5'>5</option>
-                    <option value='6'>6</option>
-                    <option value='7'>7</option>
-                    <option value='8'>8</option>
-                    <option value='9'>9</option>
-                    <option value='10'>10</option>
-                    <option value='11'>11</option>
-                    <option value='12'>12</option>
-                  </select>
-                </div> <br>
-                <div class="form-group">
-                    <label for="number">Year:</label>
-                    <input type="number" class="form-control" id="year" name="year" number="number" required>
-                </div> <br>
-                <div class="form-group">
-                  <label id="gender-label" for="gender">Gender:</label><br>
-                  <select class="form-control" name="gender">
-                    <option value='male'>Male</option>
-                    <option value='female'>Female</option>
-                  </select> <br>
-                </div>
-                <div>
-                  <button type="submit" class="btn btn-info" onclick="findName();">Get Akan Name</button>
-                <br>
-                </div>
-              </form>
-              <p id="results"> </p>
-            </div>
-            <script src="js/script.js"></script>
-        </div>
     </div>
+    <div class="container">
+      <div>
+        <h2>Enter Your details</h2>
+      </div>
+      <form class="myform" onsubmit="return getAkanName()"> 
+        <div>
+          <label for="day-of-birth"> Day: <br><input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required> </label>
+        </div>
+        <div>
+          <label for="month-of-birth"> Month: <br><input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required> </label>
+        </div>
+        <div>
+          <label for="year-of-birth"> Year: <br><input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required> </label> 
+        </div>
+        <div>
+          <label for="gender"> <p>Select your gender: </p> Male <input id="male-input" type="radio" name="gender" value="male" required> Female <input id="female-input" type="radio" name="gender" value="female" required> </label> 
+        </div>
+        <div>
+          <input id="get-name" type="submit" name="" value="Generate name"> 
+        </div>
+        </form> 
+        <form onsubmit="return clearInput()"> 
+        <input class="clear" type="submit" value="Reset Form"> 
+        </form> 
+        <h3 id = display-name ><strong>Your Akan Name and Day of Birth<span>&#8595;</span></strong></h3> 
+        <p id="result"></p>
+    </div>
+ <script src="javascript/script.js"></script>
 </body>
 </html>
+

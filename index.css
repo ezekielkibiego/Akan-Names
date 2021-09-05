@@ -5,18 +5,25 @@
 body{
     padding: 0;
     margin: 0;
-    background-image: url("images/image1.jpeg");
+    background-image: url("images/img2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .header h1{
     text-align: center;
     margin-top: 30px;
-    color: #25abaf;
-    text-shadow: 2px 2px #c76363ea;
+    color: #005500;
+    text-shadow: 2px 2px #ff0000e7;
     text-decoration-line: underline;
 }
 .header h2{
-    color: #c76363ea;
+    color: #ff0000e7;
     text-align: center;
+}
+h3{
+    color: #005500;
+}
+#result{
+    color: #005500;
+    font-size: 30px;
 }
