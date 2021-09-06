@@ -31,8 +31,8 @@ function monthValidator () {
          
 } 
 function dayValidator () { 
-    if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) { 
-        if (dayOfBirth > 28 || dayOfBirth < 1) {
+    if (monthOfBirth === 2 ) {
+        if (dayOfBirth > 29 || dayOfBirth < 1) {
             alert("Enter a valid day!"); 
             } else if (monthOfBirth === 2 && dayOfBirth > 29){
                 alert("Enter a valid day!");
