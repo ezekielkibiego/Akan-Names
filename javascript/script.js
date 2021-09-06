@@ -17,33 +17,37 @@ var myGenderValue = getGender();
 console.log(myGenderValue);
 function yearValidator () { 
     if (yearOfBirth < 1900 || yearOfBirth > 2100) { 
-        return false;
+        alert("Enter a valid year!");
         } else { 
             return true; 
-        } 
-} 
+        }
+}
 function monthValidator () { 
     if (monthOfBirth < 1 || monthOfBirth > 12) { 
-        return false;
+        alert("Enter a valid month!");
         } else { 
             return true; 
-        } 
+        }
+         
 } 
 function dayValidator () { 
     if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) { 
-        if (dayOfBirth > 28 || dayOfBirth < 1) { 
-            return false;
-            } else if (monthOfBirth === 2 && dayOfBirth > 29) {
-                return false; 
-                
+        if (dayOfBirth > 28 || dayOfBirth < 1) {
+            alert("Enter a valid day!"); 
+            } else if (monthOfBirth === 2 && dayOfBirth > 29){
+                alert("Enter a valid day!");
             } else if (monthOfBirth === 2 && dayOfBirth < 1) {
-                return false;
-                } else {
-                    return true; 
-                } 
+                alert("Enter a valid day!");
+            } else { 
+                return true; 
+            }   
+                
     } else if (dayOfBirth < 1 || dayOfBirth > 31){ 
-        return false;
-        } else { return true; } 
+        alert("Enter a valid day!");
+    } else { 
+        return true; 
+    }
+         
 } 
 var yearValid = yearValidator();
 var monthValid = monthValidator();
@@ -75,6 +79,6 @@ if (myGenderValue == "male" && yearValid && monthValid && dayValid){
         case 0: document.getElementById('result').textContent = "You were born on a Sunday, your Akan name is " + femaleAkanNames[0]; document.getElementById('display-name').textContent = "Your Akan Name and Day of Birth: "; return false; break; 
         default: alert("oops no Akan name for you!"); 
     } 
-} else{ alert("Enter a valid year, month or day!"); 
+
 } 
 }
