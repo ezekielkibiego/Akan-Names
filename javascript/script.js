@@ -52,7 +52,7 @@ function dayValidator () {
 var yearValid = yearValidator();
 var monthValid = monthValidator();
 var dayValid = dayValidator(); 
-var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
+var dayOfWeekNumber = Math.trunc((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
 if (myGenderValue == "male" && yearValid && monthValid && dayValid){
     switch (dayOfWeekNumber) { 
