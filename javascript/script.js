@@ -1,27 +1,12 @@
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame" ]; 
 var femaleAkanNames = [ "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama" ]; 
-function getAkanName () { 
-    var yearOfBirth = document.getElementById("year-input").value;
-    var monthOfBirth = Number(document.getElementById("month-input").value); 
+function getAkanName () {
     var dayOfBirth = Number(document.getElementById("day-input").value); 
+    var monthOfBirth = Number(document.getElementById("month-input").value); 
+    var yearOfBirth = document.getElementById("year-input").value;
     var genders = document.getElementsByName("gender"); 
-function getGender () { 
-    for (let gender of genders){ 
-        if (gender.checked){ 
-            return gender.value; 
-        } 
-    } 
-} 
-var myGenderValue = getGender(); 
-console.log(myGenderValue);
-function yearValidator () { 
-    if (yearOfBirth < 1900 || yearOfBirth > 2100) { 
-        alert("Enter a valid year!");
-        } else { 
-            return true; 
-        }
-}
+
 function monthValidator () { 
     if (monthOfBirth < 1 || monthOfBirth > 12) { 
         alert("Enter a valid month!");
@@ -53,6 +38,23 @@ var yearValid = yearValidator();
 var monthValid = monthValidator();
 var dayValid = dayValidator(); 
 var dayOfWeekNumber = Math.trunc((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
+
+function getGender () { 
+    for (var gender of genders){ 
+        if (gender.checked){ 
+            return gender.value; 
+        } 
+    } 
+} 
+var myGenderValue = getGender(); 
+console.log(myGenderValue);
+function yearValidator () { 
+    if (yearOfBirth < 1900 || yearOfBirth > 2100) { 
+        alert("Enter a valid year!");
+        } else { 
+            return true; 
+        }
+}
 
 if (myGenderValue == "male" && yearValid && monthValid && dayValid){
     switch (dayOfWeekNumber) { 
