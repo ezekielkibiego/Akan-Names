@@ -7,6 +7,11 @@ function getAkanName () {
     var yearOfBirth = document.getElementById("year-input").value;
     var genders = document.getElementsByName("gender");
 
+    var yearValid = yearValidator();
+    var monthValid = monthValidator();
+    var dayValid = dayValidator(); 
+    var dayOfWeekNumber = Math.trunc((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*Number(monthOfBirth+1)/10))+dayOfBirth)%7);
+    
  function dayValidator () { 
         if (monthOfBirth === 2 ) {
             if (dayOfBirth > 29 || dayOfBirth < 1) {
@@ -43,12 +48,6 @@ function yearValidator () {
             return true; 
         }
 }
-
-var yearValid = yearValidator();
-var monthValid = monthValidator();
-var dayValid = dayValidator(); 
-var dayOfWeekNumber = Math.trunc((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+ ((5*Number(yearOfBirth.slice(2,4))/4))+((26*Number(monthOfBirth+1)/10))+dayOfBirth)%7);
-
 function getGender () { 
     for (var gender of genders){ 
         if (gender.checked){ 
