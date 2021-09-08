@@ -57,7 +57,7 @@ input {
     border: none;
     resize: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 span{
     padding: 10px;
